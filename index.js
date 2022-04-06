@@ -14,10 +14,10 @@ const closestToZero = (arr) => {
     : arr[arr.indexOf(-1 * closestIntAbsVal)];
 };
 
-console.log(closestToZero([]));
-console.log(closestToZero(undefined));
-console.log(closestToZero());
-console.log(closestToZero([-1.5, 0, 1, 2, 3]));
-console.log(closestToZero([-1, 1, 2, 3]));
-console.log(closestToZero([-1, 2, 3, 4]));
-console.log(closestToZero([100, 101, -200, 30]));
+console.log(closestToZero([])); // 0
+console.log(closestToZero(undefined)); // 0
+console.log(closestToZero()); // 0
+console.log(closestToZero([-1.5, 0, 1, 2, 3])); // "All elements of array must be integers"
+console.log(closestToZero([-1, 1, 2, 3])); // 1
+console.log(closestToZero([-1, 2, 3, 4])); // -1
+console.log(closestToZero([100, 101, -200, 30])); // 30
